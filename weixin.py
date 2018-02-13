@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #-*- coding:utf-8 -*-
-#test
-#--
+#testaaa
+
 import re
 import urllib.request
 import time
@@ -12,7 +12,7 @@ opener = urllib.request.build_opener()
 opener.addheaders=[headers]
 urllib.request.install_opener(opener)
 listurl=[]#用来存放文章网址列表
-#自定义函数,功能是使用代理服务器
+#自定义函数,功能是使用服务器下载网页(最后决定不要代理了)
 def use_proxy(url):
     try:
         data = urllib.request.urlopen(url).read().decode('utf-8','ignore')
